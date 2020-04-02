@@ -81,6 +81,8 @@ services:
   postgres:
     image: postgres:12-alpine
     shm_size: '512m'
+    #ports:
+    #  - "5432:5432"
     environment:
       POSTGRES_USER: rpuser
       POSTGRES_PASSWORD: rppass
